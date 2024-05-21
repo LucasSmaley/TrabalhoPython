@@ -5,7 +5,42 @@ Desenvolver um sistema de registro de notas de alunos para uma instituição de 
 porte. 
 
 
-    1. Elaborar o diagrama de Casos de Uso do modelo de negócios. 
+    1. Elaborar o diagrama de Casos de Uso do modelo de negócios.
+    [
+            Atores Identificados:
+       1. Administrador
+       2. Professor
+       3. Aluno
+        Casos de Uso:
+       1. Incluir Aluno
+
+        _Descrição: Permite a inclusão de novos alunos no sistema.
+        _Ator: Administrador
+
+        Incluir Disciplina
+        _Descrição: Permite a inclusão de novas disciplinas no sistema.
+        _Ator: Administrador
+
+        Inscrever Aluno em Disciplina
+        _Descrição: Permite a inscrição de alunos em disciplinas específicas.
+        _Ator: Administrador
+
+        Incluir Notas
+        _Descrição: Permite a inclusão das notas das provas SM1, SM2, AV e AVS.
+        _Ator: Professor
+
+        Calcular Notas Finais
+        _Descrição: Calcula as notas finais (NF) dos alunos com base nas regras fornecidas.
+        _Ator: Sistema (ação automática)
+
+        Consultar Notas e Situação do Aluno
+        _Descrição: Permite a consulta das notas e da situação (Aprovado ou Reprovado) de um aluno específico em uma disciplina específica.
+        _Ator: Aluno, Professor
+
+        Emitir Relatório de Notas
+        _Descrição: Gera um relatório com as notas (SM1, SM2, AV, AVS) e a situação (Aprovado ou Reprovado) de todos os alunos de uma disciplina.
+        _Ator: Professor, Administrador  
+    ] 
     2. Elaborar o diagrama de Entidade-Relacionamento do modelo de dados (no mínimo três tabelas). 
     3. Criar as tabelas no banco de dados PostgreSQL. 
     4. Implementar as operações CRUD do banco de dados em Python com o framework psycopg2. 
